@@ -22,3 +22,28 @@
 
 6. Demokan aplikasi dengan membuat video dan diupload di Youtube.
 
+## **No. 1**
+
+`Package` pada java adalah pengelompokan `kelas`, `interface`, dan bahkan `sub-package` dalam suatu `namespace` atau paket. `Package` sendiri digunakan untuk membungkus `kelas`, `interface` dan `sub-package` yang dapat digunakan lagi pada project lain, sehingga kita tidak perlu membuat terus menerus kode-kode tersebut.
+
+### **Contoh**
+
+```java
+import java.util.ArrayList;  
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        
+        list.add("Yuta");
+        list.add("Delai");
+        list.add("Fayyadh");
+        
+        System.out.println("List anggota kelompok: " + list);
+    }
+}
+```
+
+![alt text](Resource/no1/image.png)
+
+Pada contoh program diatas kita menggunakan package `java.util.ArrayList` yang memiliki kelas `ArrayList` yang merupakan implementasi dari `ArrayList`. Dengan menggunakan package diatas, kita tidak perlu susah-susah membuat lagi kode untuk implementasi `ArrayList` nya, cukup membuat objek baru dari kelas `ArrayList` yang terkandung dalam package tersebut. 
